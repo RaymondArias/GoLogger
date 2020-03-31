@@ -1,11 +1,10 @@
 package main
 
 import (
-	"encoding/json"
-	"math/rand"
-
 	"context"
+	"encoding/json"
 	"fmt"
+	"math/rand"
 	"os"
 	"strconv"
 	"time"
