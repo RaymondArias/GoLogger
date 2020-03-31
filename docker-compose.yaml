@@ -1,0 +1,38 @@
+version: '2.0'
+services:
+  gologger1:
+    image: raymondarias/gologger:0.1.1
+    environment:
+      SLEEP_DURATION: "1ms"
+      THREADS: "10"
+      APP_ID: "A"
+  gologger2:
+    image: raymondarias/gologger:0.1.1
+    environment:
+      SLEEP_DURATION: "1ms"
+      THREADS: "10"
+      APP_ID: "B"
+  gologger3:
+    image: raymondarias/gologger:0.1.1
+    environment:
+      SLEEP_DURATION: "1ms"
+      THREADS: "10"
+      APP_ID: "C"
+  gologger4:
+    image: raymondarias/gologger:0.1.1
+    environment:
+      SLEEP_DURATION: "1ms"
+      THREADS: "10"
+      APP_ID: "D"
+  gologger5:
+    image: raymondarias/gologger:0.1.1
+    environment:
+      SLEEP_DURATION: "1ms"
+      THREADS: "10"
+      APP_ID: "E"
+  gologger6:
+    image: raymondarias/gologger:0.1.1
+    environment:
+      SLEEP_DURATION: "1ms"
+      THREADS: "10"
+      APP_ID: "F"
