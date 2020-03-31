@@ -18,7 +18,7 @@ func main() {
 
 	appID, found := os.LookupEnv("APP_ID")
 	if !found {
-		sleepDur = "A"
+		appID = "A"
 	}
 
 	threads, found := os.LookupEnv("THREADS")
@@ -33,9 +33,7 @@ func main() {
 	ctx, cancelFunc := context.WithCancel(context.Background())
 	defer cancelFunc()
 	for i := 0; i < numThread; i++ {
-		go func(ctx context.Context, thread int) {
-			log(ctx, sleepDur, thread, appID)
-		}(ctx, i)
+		go log(ctx, sleepDur, i, appID)
 	}
 	log(ctx, sleepDur, -1, appID)
 
